@@ -1,4 +1,7 @@
+// built-in imports
 import React, { useContext } from 'react'
+
+// user defined imports
 import { ChatContext } from '../context/ChatContext';
 import Cam from "../img/cam.png";
 import Img from "../img/img.png";
@@ -6,7 +9,7 @@ import More from "../img/more.png";
 import Input from './Input';
 import Messages from './Messages';
 
-
+// third party imports
 
 const Chat = () => {
 

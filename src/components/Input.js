@@ -1,12 +1,17 @@
-import { arrayUnion, doc, serverTimestamp, Timestamp, updateDoc } from 'firebase/firestore';
-import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
+// built-in imports
 import React, { useContext, useState } from 'react';
+
+// user defined imports
+import Attach from "../img/attach.png";
+import Img from "../img/img.png";
 import { AuthContext } from '../context/AuthContext';
 import { ChatContext } from '../context/ChatContext';
 import { db, storage } from '../firebase';
+
+// third party imports
 import { v4 as uuid } from "uuid";
-import Attach from "../img/attach.png";
-import Img from "../img/img.png";
+import { arrayUnion, doc, serverTimestamp, Timestamp, updateDoc } from 'firebase/firestore';
+import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
 
 const Input = () => {
 

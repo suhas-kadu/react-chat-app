@@ -1,6 +1,10 @@
+// built-in imports
 import { createContext, useContext, useReducer } from "react";
 
+// user defined imports
 import { AuthContext } from "./AuthContext";
+
+// third party imports
 
 export const ChatContext = createContext();
 

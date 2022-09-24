@@ -1,6 +1,10 @@
-import React from 'react'
+// built-in imports
+
+// user defined imports
 import Chat from '../components/Chat';
 import Sidebar from '../components/Sidebar';
+
+// third party imports
 
 const HomePage = () => {
     return (

@@ -1,8 +1,13 @@
-import { doc, onSnapshot } from 'firebase/firestore';
+// built-in imports
 import React, { useContext, useEffect, useState } from 'react'
+
+// user defined imports
 import { AuthContext } from '../context/AuthContext';
 import { ChatContext } from '../context/ChatContext';
 import { db } from '../firebase';
+
+// third party imports
+import { doc, onSnapshot } from 'firebase/firestore';
 
 const Chats = () => {
 

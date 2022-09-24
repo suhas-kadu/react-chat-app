@@ -1,7 +1,11 @@
+// built-in imports
 import React, { useContext, useEffect, useRef } from 'react';
+
+// user defined imports
 import { AuthContext } from '../context/AuthContext';
 import { ChatContext } from '../context/ChatContext';
-import "../style.scss"
+
+// third party imports
 
 const Message = ({ message }) => {
 

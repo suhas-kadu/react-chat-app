@@ -1,9 +1,14 @@
+// built-in imports 
+import { useContext } from "react";
+
+// user defined imports 
+import { AuthContext } from "./context/AuthContext"
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+
+// third party imports 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "./context/AuthContext"
 
 const App = () => {
 

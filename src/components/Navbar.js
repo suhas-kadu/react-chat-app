@@ -1,7 +1,12 @@
+// built-in imports
 import React, { useContext } from 'react'
-import { signOut } from 'firebase/auth';
+
+// user defined imports
 import { auth } from "../firebase"
 import { AuthContext } from '../context/AuthContext';
+
+// third party imports
+import { signOut } from 'firebase/auth';
 
 const Navbar = () => {
 
@@ -9,7 +14,7 @@ const Navbar = () => {
 
     return (
         <div className='navbar'>
-            <div className='logo'>Lama Chat</div>
+            <div className='logo'>CLICK-CHAT</div>
             <div className='user'>
                 <img src={currentUser.photoURL} alt='' />
                 <span>{currentUser.displayName}</span>

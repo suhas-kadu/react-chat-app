@@ -1,13 +1,15 @@
-import "../style.scss";
-import Add from "../img/addAvatar.png"
+// built-in imports
+
+// user defined imports
+import { auth } from "../firebase";
+
+// third party imports
 import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { useState } from "react";
-import { auth } from "../firebase";
 
 const LoginPage = () => {
 
-    const [err, setErr] = useState(false);
+
     const navigate = useNavigate();
 
     const onSubmit = async (e) => {
@@ -27,7 +29,7 @@ const LoginPage = () => {
 
         <div className="form-container">
             <div className="form-wrapper">
-                <span className="logo"> Chat</span>
+                <span className="logo"> CLICK-CHAT</span>
                 <span className="title"> Login</span>
                 <form onSubmit={onSubmit}>
                     <input type="email" placeholder="email" />

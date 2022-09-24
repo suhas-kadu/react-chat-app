@@ -1,17 +1,22 @@
-import "../style.scss";
-import Add from "../img/addAvatar.png"
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { auth, storage, db } from "../firebase.js";
-import { doc, setDoc } from "firebase/firestore";
+
+// built-in imports
 import { useState } from "react";
+
+// user defined imports
+import Add from "../img/addAvatar.png"
+import { auth, storage, db } from "../firebase.js";
+
+// third party imports
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { Link, useNavigate } from "react-router-dom";
+import { doc, setDoc } from "firebase/firestore";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 
 
 const RegisterPage = () => {
 
 
-    const [error, setError] = useState(false);
+    const [, setError] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
 
     const navigate = useNavigate();
@@ -72,7 +77,7 @@ const RegisterPage = () => {
         <div>
             <div className="form-container">
                 <div className="form-wrapper">
-                    <span className="logo"> Chat</span>
+                    <span className="logo">CLICK-CHAT</span>
                     <span className="title"> Register</span>
                     <form onSubmit={onSubmit}>
 

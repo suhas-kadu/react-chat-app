@@ -1,7 +1,12 @@
-import { collection, doc, getDoc, getDocs, query, serverTimestamp, setDoc, updateDoc, where } from 'firebase/firestore';
+// built-in imports
 import React, { useState, useContext } from 'react'
+
+// user defined imports
 import { AuthContext } from '../context/AuthContext';
 import { db } from '../firebase';
+
+// third party imports
+import { collection, doc, getDoc, getDocs, query, serverTimestamp, setDoc, updateDoc, where } from 'firebase/firestore';
 
 const Search = () => {
     const [username, setUsername] = useState("");
